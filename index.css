@@ -258,10 +258,10 @@ color: white;
   transition: 0.5s;
 }
 
-.card:hover #text{
+.card:hover{
  color: white;
- opacity: 1;
- transition: 0.6s;
+ opacity: 0;
+ transition: 0.5s;
 }
 
 .parrafo{
