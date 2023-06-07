@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h2{
+  color: white;
+}
+
+body{
+  background-color: #081b29;
+  height: 100vh;
+  width: 100%;
+}
+
+#nav{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  height: 4rem;
+  position: fixed;
+}
+
+#selectores{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+#selectores a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+}
+
+
+#titulo{
+  padding: 1rem;
+  height: 100%;
+}
+
+
+#titulo div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#boton-sobre-mi{
+  text-decoration: none;
+  color: #00abf0;;
+  border: 2px solid #00abf0;;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#boton-sobre-mi:hover{
+  color: white;
+  border: 2px solid #00abf0;
+  background-color: #00abf0;
+  transition: 0.5s;
+}
+
+#titulo1{
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+#titulo2{
+  color: #00abf0;
+  font-size: 3rem;
+}
+
+/* SECCION SOBRE MI */
+
+.red-social{
+  height: 3rem;
+  width: 3rem;
+  fill: #081b29;
+}
+
+.red-social:hover{
+  fill: white;
+  transition: 0.5s;
+}
+
+#links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+#sobre-mi{
+  background-color: #006189;
+  padding: 1rem;
+  box-shadow: 0 5px 5px 0 rgb(51 65 85 / 50%), 0 0 0 1px #334155;
+}
+
+#sobre-mi #contenedor{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+#sobre-mi p{
+ text-align: center;
+font-size: 1.25rem;
+color: white;
+  }
+  
+#div-img{
+    background-color: #081b29;
+    border-radius: 50rem;
+    border: solid 2px #00abf0;
+}
+
+#mi-img{
+  height: 200px;
+  border-radius: 50rem;
+}
+/* Seccion leguajes */
+#lenguajes{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#lenguajes h1{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+#div-svg{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#div-svg-front{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+#div-svg-back{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#div-leguajes-front{
+  display: flex;
+  gap: 0.5rem;
+}
+
+#front{
+  height: 5rem;
+  width: 5rem;
+  color: #006189;
+}
+
+#back{
+  height: 5rem;
+  width: 5rem;
+  fill:  #006189;
+}
+
+
+.spam-front{
+  padding: 0.5rem;
+  color: white;
+  background-color: #006189;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+/* Seccion Proyectos */
+#proyectos{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#titulo-proyecto{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+#div-proyectos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.img-proyecto{
+  height: 100%;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.card{
+  position: relative;
+  height: 200px;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 5px 0 rgb(51 65 85 / 50%), 0 0 0 1px #334155;
+  width: 300px;
+}
+
+#text{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #061118;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  opacity: 0;
+}
+
+.sitio-web{
+  text-decoration: none;
+  color: #00abf0;;
+  border: 2px solid #00abf0;;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.sitio-web:hover{
+  color: white;
+  border: 2px solid #00abf0;
+  background-color: #00abf0;
+  transition: 0.5s;
+}
+
+.card:hover #text{
+ color: white;
+ opacity: 1;
+ transition: 0.6s;
+}
+
+.parrafo{
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+
+.parrafo2{
+  text-align: center;
+  font-size: 1.10rem;
+}
+
+
+@media (max-width: 640px) {
+  #div-svg{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #titulo1{
+  font-size: 3rem;
+  }
+}
